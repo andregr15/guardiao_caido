@@ -1,4 +1,4 @@
-import Command from '../utils/command';
+import Command from '../../utils/command';
 
 class PingCommand extends Command {
   constructor() {

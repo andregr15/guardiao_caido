@@ -1,4 +1,4 @@
-import Command from '../utils/command';
+import Command from '../../utils/command';
 
 export default new Command({
   alias: 'Comando não encontrado',
