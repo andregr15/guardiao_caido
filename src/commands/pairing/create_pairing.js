@@ -2,7 +2,7 @@ import Command from '../../utils/command';
 
 class StartPairingCreation {
   async handle({ user, showTitle = true }) {
-    const message = await user.send('Bão vini ?');
+    const message = await user.send('Que tipo de atividade deseja realizar ?');
 
     try {
       const responses = await message.channel.awaitMessages(m => true, {
