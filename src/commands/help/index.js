@@ -15,7 +15,7 @@ export default [
         .setTitle('Abaixo uma lista dos comandos disponiveis.');
 
       commands.forEach((command, index) => {
-        embed.addField(`${command.alias}: ${command.description}`, command.signature ? `Syntaxe: ${prefix}${command.signature}\n` : null, false);
+        embed.addField(`${command.alias}: ${command.description}`, command.signature ? `Syntaxe: ${prefix} ${command.signature}\n` : null, false);
       });
 
       embed.setFooter(`Todos os comandos devem ser prefixados com ${prefix}`);
