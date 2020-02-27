@@ -1,9 +1,9 @@
-FROM node:carbon
+FROM node:12-alpine3.11
+
+RUN mkdir -p /app
 
 WORKDIR '/app'
 
-COPY ./entrypoint /usr/local/bin/
+COPY . .
 
-RUN chmod +x /usr/local/bin/entrypoint
-
-ENTRYPOINT ["entrypoint"]
+RUN yarn
